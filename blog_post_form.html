@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+<title>Page Title</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+        }
+
+        input, textarea, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #2adb82;
+            border: none;
+            cursor: pointer;
+        }
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+
+</head>
+
+<body>
+<input type="text" placeholder="Blog post title">
+    <form> 
+        <textarea placeholder="Write Blog Here" rows="8" required></textarea>
+        <label for="cars">Choose a category:</label>
+        <select name="cars" id="cars">
+          <option value="tech">Tech</option>
+          <option value="world">World</option>
+          <option value="health">Health</option>
+          <option value="cars">Car's</option>
+        </select>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <button type="button" onclick="alert('Submitted!')">Submit Post!</button>
+    </form>
+</div>
+
+</body>
+</html>
